@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Reservation System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f6f9; }
+        .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h1, h2 { color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #007bff; color: white; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        button { background-color: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Online Course Reservation</h1>
+    
+    <!-- Available Courses Table -->
+    <h2>Available Courses</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Instructor</th>
+                <th>Seats Available</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CS101</td>
+                <td>Introduction to Computer Science</td>
+                <td>Dr. Smith</td>
+                <td>5 / 30</td>
+            </tr>
+            <tr>
+                <td>WEB201</td>
+                <td>Web Development Fundamentals</td>
+                <td>Prof. Johnson</td>
+                <td>12 / 25</td>
+            </tr>
+            <tr>
+                <td>DS301</td>
+                <td>Data Structures & Algorithms</td>
+                <td>Dr. Lee</td>
+                <td>2 / 20</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Course Reservation Form -->
+    <h2>Reserve Your Seat</h2>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="e.g. Jane Doe">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="e.g. jane@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">-- Select a Course --</option>
+                <option value="CS101">CS101 - Introduction to Computer Science</option>
+                <option value="WEB201">WEB201 - Web Development Fundamentals</option>
+                <option value="DS301">DS301 - Data Structures & Algorithms</option>
+            </select>
+        </div>
+
+        <button type="submit">Complete Reservation</button>
+    </form>
+</div>
+
+</body>
+</html>
